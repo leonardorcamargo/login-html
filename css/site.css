@@ -1,0 +1,25 @@
+.painel-principal {
+	max-width: 40em;
+	width: auto;
+	margin-left: auto;
+    margin-right: auto;
+	height: 20em;
+	background-color: rgba(60, 29, 61, 0.8);
+}
+
+.principal div{
+	flex: 1;
+}
+
+.img-background {
+	background-image: url("../img/css-background-image-size1.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.principal {	
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
