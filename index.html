@@ -3,13 +3,36 @@
 <head>
 		<meta charset="utf-8">
 		<title>Login</title>
-		<link rel="stylesheet" href="css/site.css">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/site.css">		
+		
+		<script>
+			function doLogin() {
+				var login, password;
+				login = document.getElementById("login").value;
+				password = document.getElementById("password").value;
+
+				document.getElementById("rLogin").innerHTML = login;
+				document.getElementById("rPassword").innerHTML = password;
+			}
+		</script>
 </head>
-<body class="img-background principal">
+<body class="img-background">
 	<div class="painel-principal">
-		Usuario:
-		Senha:
+    <form>
+      <div class="form-group">
+        <label for="login">Usuario: </label>
+        <input type="text" class="form-control" id="idLogin" placeholder="Nome do usuario">
+      </div>
+      <div class="form-group">
+        <label for="password">Senha: </label>
+        <input type="password" class="form-control" id="idPassword" placeholder="Senha">
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="doLogin()">Logar</button>
+    </form>
+		<input type="hidden" id="rLogin">
+		<input type="hidden" id="rPassword">
 	</div>
 </body>
 </html>

@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;	
+	height: 100vh;	
+	display: flex;
+	align-items: center;
+}
+
 .painel-principal {
+	flex: 1;
 	max-width: 40em;
 	width: auto;
 	margin-left: auto;
     margin-right: auto;
 	height: 20em;
-	background-color: rgba(60, 29, 61, 0.8);
-}
-
-.principal div{
-	flex: 1;
+	background-color: black;
+	background-color: rgba(60, 29, 61, 0.7);
+	padding: 3em;
+	box-sizing: border-box;
 }
 
 .img-background {
@@ -18,8 +28,7 @@
     background-attachment: fixed;
 }
 
-.principal {	
-	height: 100vh;
-	display: flex;
-	align-items: center;
+label{
+  color: white;
+	
 }
