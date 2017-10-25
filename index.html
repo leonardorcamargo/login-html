@@ -9,12 +9,8 @@
 		
 		<script>
 			function doLogin() {
-				var login, password;
-				login = document.getElementById("login").value;
-				password = document.getElementById("password").value;
-
-				document.getElementById("rLogin").innerHTML = login;
-				document.getElementById("rPassword").innerHTML = password;
+				document.getElementById("idReturnLogin").innerHTML = document.getElementById("idLogin").value;
+				document.getElementById("idReturnPassword").innerHTML = document.getElementById("idPassword").value;
 			}
 		</script>
 </head>
@@ -31,8 +27,8 @@
       </div>
       <button type="submit" class="btn btn-primary" onclick="doLogin()">Logar</button>
     </form>
-		<input type="hidden" id="rLogin">
-		<input type="hidden" id="rPassword">
+		<input type="hidden" id="idReturnLogin">
+		<input type="hidden" id="idReturnPassword">
 	</div>
 </body>
 </html>
