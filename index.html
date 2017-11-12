@@ -12,20 +12,25 @@
 				document.getElementById("idReturnLogin").innerHTML = document.getElementById("idLogin").value;
 				document.getElementById("idReturnPassword").innerHTML = document.getElementById("idPassword").value;
 			}
+			
+			function doNovoUsuario() {
+				location.href = "cadastro.html";
+			}
 		</script>
 </head>
 <body class="img-background">
-	<div class="painel-principal">
+	<div class="panel panel-login">
     <form>
-      <div class="form-group">
-        <label for="login">Usuario: </label>
-        <input type="text" class="form-control" id="idLogin" placeholder="Nome do usuario">
-      </div>
-      <div class="form-group">
-        <label for="password">Senha: </label>
-        <input type="password" class="form-control" id="idPassword" placeholder="Senha">
-      </div>
-      <button type="button" class="btn btn-primary" onclick="doLogin()">Logar</button>
+		<div class="form-group">
+			<label for="login">Usuario: </label>
+			<input type="text" class="form-control" id="idLogin" placeholder="Nome do usuario">
+		</div>
+		<div class="form-group">
+			<label for="password">Senha: </label>
+			<input type="password" class="form-control" id="idPassword" placeholder="Senha">
+		</div>
+		<button type="button" class="btn btn-primary" onclick="doLogin()">Logar</button>	
+		<button type="button" class="btn btn-link" onclick="doNovoUsuario()">Não tenho cadastro</button>
     </form>
 		<input type="hidden" id="idReturnLogin">
 		<input type="hidden" id="idReturnPassword">
