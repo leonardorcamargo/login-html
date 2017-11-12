@@ -8,20 +8,28 @@ body{
 	align-items: center;
 }
 
-.painel-principal {
+.panel {
 	flex: 1;
-	max-width: 40em;
 	width: auto;
 	margin-left: auto;
     margin-right: auto;
-	height: 20em;
 	background-color: black;
 	background-color: rgba(60, 29, 61, 0.7);
 	padding: 3em;
 	box-sizing: border-box;
 }
 
+.panel-login {
+	max-width: 40em;	
+	height: 20em;	
+}
+
+.panel-cadastro{
+	max-width: 100em;
+}
+
 .img-background {
+    background-color: black;
 	background-image: url("../img/css-background-image-size1.jpg");
 	background-repeat: no-repeat;
     background-position: center;
@@ -29,6 +37,9 @@ body{
 }
 
 label{
-  color: white;
-	
+  color: white;	
+}
+
+legend{
+	color: white;
 }
