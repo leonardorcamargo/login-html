@@ -6,21 +6,11 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/site.css">		
-		
-		<script>
-			function doLogin() {
-				document.getElementById("idReturnLogin").innerHTML = document.getElementById("idLogin").value;
-				document.getElementById("idReturnPassword").innerHTML = document.getElementById("idPassword").value;
-			}
-			
-			function doNovoUsuario() {
-				location.href = "cadastro.html";
-			}
-		</script>
+		<script src="js/function.js"></script>
 </head>
 <body class="img-background">
 	<div class="panel panel-login">
-    <form>
+	<form>
 		<div class="form-group">
 			<label for="login">Usuario: </label>
 			<input type="text" class="form-control" id="idLogin" placeholder="Nome do usuario">
@@ -29,11 +19,11 @@
 			<label for="password">Senha: </label>
 			<input type="password" class="form-control" id="idPassword" placeholder="Senha">
 		</div>
-		<button type="button" class="btn btn-primary" onclick="doLogin()">Logar</button>	
+		<button type="button" class="btn btn-primary" onclick="doLogin(document)">Logar</button>	
 		<button type="button" class="btn btn-link" onclick="doNovoUsuario()">Não tenho cadastro</button>
     </form>
-		<input type="hidden" id="idReturnLogin">
-		<input type="hidden" id="idReturnPassword">
+	<input type="hidden" id="idReturnLogin">
+	<input type="hidden" id="idReturnPassword">
 	</div>
 </body>
 </html>
